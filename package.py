@@ -1,11 +1,6 @@
-name = "test_package"
+name = "test_pkg"
 version = "1.0.0"
-build_command = ""
-tests={
-    "fail": {
-        "command": "exit 1"
-    },
-    "fail_lst": {
-        "command": ["exit", "1"]
-    }
-}
+build_command = False
+
+def commands():
+    print("This is version 1.0.0!")
